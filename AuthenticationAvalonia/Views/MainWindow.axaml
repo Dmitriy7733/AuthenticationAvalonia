@@ -1,0 +1,40 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:AuthenticationAvalonia.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="clr-namespace:AuthenticationAvalonia.Views"
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="450" Background="Black" 
+        x:Class="AuthenticationAvalonia.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+		Title="AuthenticationAvalonia">
+	
+	<Grid Margin="40">
+		<StackPanel>
+			<TextBlock Margin="0 5" Foreground="White" >Userame:</TextBlock>
+			<Border Background="Gainsboro"
+        BorderBrush="Black"
+        BorderThickness="2"
+        CornerRadius="3"
+        Padding="10" Margin="10">
+				<TextBox  Watermark="Enter your name"/>
+			</Border>
+			<TextBlock Margin="0 5" Foreground="White" >Password:</TextBlock>
+			<Border Background="Gainsboro"
+          BorderBrush="Black"
+          BorderThickness="2"
+          CornerRadius="3"
+          Padding="10" Margin="10">
+				<TextBox PasswordChar="*" Watermark="Enter your password"/>
+			</Border>
+			<CheckBox IsChecked="True">Remember Me</CheckBox>
+			<StackPanel Orientation="Horizontal">
+				<Button CornerRadius="10" Background="GreenYellow">Log in</Button>
+				<Button CornerRadius="10" Margin=" 50 10" Background="Red">Cancel</Button>
+
+			</StackPanel>
+
+		</StackPanel>
+	</Grid>
+	
+</Window>
